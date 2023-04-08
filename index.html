@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<link rel="icon"  type="image/png" sizes="16×16" href="img/logo-brand.png">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <!-- start button -->
+    
+    <!-- video preloader Yuri -->
+    <div id="video-container">
+      <video autoplay muted loop>
+        <source src="img/Yuri Preloader.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div id="page-container">
+    </div>
+    
+
+
+    <a href="start.html">
+        <button id="start-btn" onclick="playSound()">START</button>
+      </a>
+          
+
+  <script>
+// JS video preloader Yuri 
+ var video = document.querySelector('video');
+video.addEventListener('playing', function() {
+    setTimeout(function() {
+        document.getElementById('video-container').style.display = 'none';
+        document.getElementById('page-container').style.display = 'block';
+    }, video.duration * 1000);
+});
+  </script>
+  </body>
+</html>
